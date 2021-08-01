@@ -1,0 +1,33 @@
+#header{
+    border-bottom: 0.16rem solid lightgray;
+    margin-bottom: 2rem;
+    display: flex;
+    
+    width: 100%;
+    background-color: var(--textcolorSnow);
+    position:fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+nav{
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#header .logo{
+    font-size: 1.31rem;
+    color: var(--bg);
+    font-family: Poppins,sans-serif;
+    font-weight: 700;
+    
+}
+
+
+#header .logo span{
+    color: var(--bgLighteen);
+}

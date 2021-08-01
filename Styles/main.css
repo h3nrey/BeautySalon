@@ -1,0 +1,37 @@
+main{
+    margin-top: 4.5rem;
+}
+
+section{ 
+    padding: 5rem 0;
+}
+
+
+.grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.button{
+    background-color: var(--bg);
+    color: var(--textcolorSnow);
+    border-radius: 0.25rem;
+    height: 3.5rem;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0 2rem;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+
+.button:hover{
+    background-color: var(--bgDark);
+    transform: scale(1.1);
+    color: var(--bg);
+}
+
+.divider1{
+    height: 0.2rem;
+    background: linear-gradient(270deg, var(--bg) 0%, rgba(204, 244, 230, 0.34) 100%);
+}
