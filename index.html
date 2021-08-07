@@ -8,17 +8,22 @@
 
         <link rel="stylesheet" href="Assets/fonts/style.css">
 
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
         <link rel="stylesheet" href="Styles/global.css">
         <link rel="stylesheet" href="Styles/header.css">
         <link rel="stylesheet" href="Styles/main.css">
         <link rel="stylesheet" href="Styles/home.css">
         <link rel="stylesheet" href="Styles/about.css">
         <link rel="stylesheet" href="Styles/services.css">
+        <link rel="stylesheet" href="Styles/testimonials.css">
+        <link rel="stylesheet" href="Styles/contact.css">
 
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
     </head>
 
     <body>
@@ -106,22 +111,94 @@
             <div class="divider1"></div>
 
             <section class="section" id="testimonials">
-                <div class="container grid">
+                <div class="container">
                     <header>
                         <h2 class="tittle">Testimonials</h2>
                     </header>
+
+                    <div class="testimonials swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="testimonial swiper-slide">
+                                <blockquote>
+                                    <p>
+                                        <span>&ldquo;</span>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nobis suscipit expedita impedit, consectetur
+                                        minima eaque cum vero, fugiat est eligendi voluptatem
+                                    </p>
+                                
+                                    <cite>
+                                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.D74uaC_DAEqTDFslqcCC7QHaHc%26pid%3DApi&f=1" alt="">
+                                        Linus Torvalds
+                                    </cite>
+                                </blockquote>
+                            </div>
+    
+                            <div class="testimonial swiper-slide">
+                                <blockquote>
+                                    <p>
+                                        <span>&ldquo;</span>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nobis suscipit expedita impedit, consectetur
+                                        minima eaque cum vero, fugiat est eligendi voluptatem
+                                    </p>
+                                
+                                    <cite>
+                                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.mediamatic.net%2Fimage%2F2016%2F12%2F12%2F22202_480_480_crop.jpg()(43B3D3F9C9A9056BCC1BFC07ECC5F95C).jpg&f=1&nofb=1" alt="">
+                                        Ton Roosendaal
+                                    </cite>
+                                </blockquote>
+                            </div>
+    
+                            <div class="testimonial swiper-slide">
+                                <blockquote>
+                                    <p>
+                                        <span>&ldquo;</span>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nobis suscipit expedita impedit, consectetur
+                                        minima eaque cum vero, fugiat est eligendi voluptatem
+                                    </p>
+                                
+                                    <cite>
+                                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.poramoralaciencia.com%2Fwp-content%2Fuploads%2F2015%2F10%2Fada_lovelace_1200_1200-1024x1024.jpg&f=1&nofb=1" alt="">
+                                        Ada Lovelace
+                                    </cite>
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+
                 </div>
             </section>
 
             <div class="divider1"></div>
             <section class="section" id="contact">
-                <div class="container grid"></div>
+                <div class="container grid">
+                    <div class="text">
+                        <h2 class="tittle">Entre em contato com a gente!</h2>
+
+                        <p>Entre em contato com a Beautysalon, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.</p>
+
+                        <a href="https://api.whatsapp.com/send?phone=+5581984073726&text=babu" class="button" target="_blank"><i class="icon-whatsapp"></i> Entrar em contato</a>
+                    </div>
+
+                    <div class="links">
+                        <ul class="grid">
+                            <li> <i class="icon-phone"></i> 81 984805874</li>
+                            <li> <i class="icon-map-pin"></i> Rua Barleao leão</li>
+                            <li> <i class="icon-mail"></i> pedro.novaes@nave.org.br</li>
+                        </ul>
+                    </div>
+                </div>
             </section>
         </main>
 
         <footer>
 
         </footer>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
 
         <script src="main.js"></script>
     </body>
