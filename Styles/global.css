@@ -14,6 +14,9 @@
     --textColorWhite: rgba(255, 255, 255, 1); 
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     font: 400 1rem "DM Sans", sans-serif;
@@ -22,13 +25,18 @@ body {
     -webkit-font-smoothing:antialisiased;
 }
 
-h1 {
+.tittle{
     font: 700 1.85rem Poppins,  sans-serif;
+    color: var(--bgDark);
 }
 
 img{
     width: 100%;
     height: auto;
+}
+
+ul {
+    list-style: none;
 }
 
 .container{
