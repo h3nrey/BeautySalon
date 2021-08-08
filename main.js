@@ -17,16 +17,17 @@ for (const link of links) {
 
 //------Scroll-----//
 
-const header = document.querySelector("#header");
-const navHeight = header.offsetHeight;
+function headerScroll() {
+    const header = document.querySelector("#header");
+    const navHeight = header.offsetHeight;
 
-window.addEventListener('scroll', function() {
     if (window.scrollY >= navHeight) {
         header.classList.add('scroll')
     } else{
         header.classList.remove('scroll')
     }
-})
+}
+
 
 //------Swiper-----//
 const swiper = new Swiper('.swiper-container', {
@@ -51,4 +52,27 @@ const swiper = new Swiper('.swiper-container', {
                         #about .text, #about .img, 
                         #services header, #services .card,
                         #testimonials  header, #testimonials .testimonial
-                        #contact text, #contact .links`, {interval: 100})
+                        #contact text, #contact .links,
+                        footer .brand, footer .social`, {interval: 100});
+
+//------Back to top-----//
+
+
+function backToTop() {
+    const btt = document.querySelector('#back-to-top');
+
+    if (window.scrollY >= 560) {
+        btt.classList.add('show')
+    } else{
+        btt.classList.remove('show')
+    }
+}
+
+
+window.addEventListener('scroll', function (){
+    headerScroll();
+    backToTop();
+})
+
+
+

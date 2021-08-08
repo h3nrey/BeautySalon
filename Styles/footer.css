@@ -1,0 +1,72 @@
+footer{
+    background-color: var(--bgDark);
+}
+
+footer .logo-alt{
+    display: block;
+    font-size: 1.2rem;
+    color: var(--bg);
+    font-family: Poppins,sans-serif;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+
+footer .logo-alt span{
+    color: var(--textcolorSnow);
+}
+
+footer .brand p{
+    color: var(--bgLighteen);
+    margin-bottom: 0.75rem;
+}
+
+footer i{
+    font-size: 2rem;
+    color: var(--bgLighteen);
+    transition: color 0.2s;
+}
+
+footer i:hover{
+    color: var(--bg);
+}
+
+footer .social a{
+    margin-right: 2rem;
+
+    transition: 0.3s;
+    display: inline-block;
+}
+
+footer .social a:hover{
+    transform: translateY(-10px)
+}
+
+/*----- Back to top ----*/
+
+#back-to-top {
+    background-color: var(--bgDark);
+    position: fixed;
+
+    bottom: 1rem;
+    right: 1rem;
+
+    padding: 0.7rem;
+    clip-path: circle();
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: 0.3s;
+    transform: translateY(100%);
+}
+
+#back-to-top.show{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#back-to-top i{
+    color: var(--bg);
+}
