@@ -13,19 +13,7 @@
 
 #header.scroll{
     box-shadow: 0px 0 12px rgba(0, 0, 0, 0.2);
-    /* background-color: var(--bg);
-    transition: background 0.2s; */
 }
-
-/* #header.scroll .logo {
-    color: var(--bgDark);
-    transition: color 0.2s;
-}
-
-#header.scroll .icon-menu{
-    color: var(--bgDark);
-    transition: color 0.2s;
-} */
 
 
 #header .logo{
