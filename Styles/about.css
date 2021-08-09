@@ -11,7 +11,7 @@
     position: relative;
 }
 #about .img::before{
-    content: '';
+    content: ' ';
     background-color: var(--bgDark);
     width: 100%;
     height: 100%;
@@ -32,14 +32,14 @@
 }
 
 #about .text{
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: var(--marginMedium);
+    margin-right: var(--marginMedium);
 }
 
 #about .text h1{
-    margin-bottom: 1rem;
+    margin-bottom: var(--marginSmall);
 }
 
 #about .text p{
-    margin-bottom: 2rem;
+    margin-bottom: var(--marginBig);
 }

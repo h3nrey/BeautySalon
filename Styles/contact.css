@@ -1,21 +1,21 @@
 #contact {
-    gap: 4rem;
+    gap: var(--marginExtraBig);
 
 }
 
 #contact .text p{
-    margin-bottom: 2rem !important;
+    margin-bottom: var(--marginBig) !important;
 }
 
 
 #contact .button i, #contact ul li i{
-    font-size: 1.5rem;
+    font-size: var(--marginMedium);
     margin-right: 0.625rem;
     color: var(--bgLighteen);
 }
 
 #contact ul.grid{
-    gap: 2rem;
+    gap: var(--marginBig);
 }
 
 #contact ul li {

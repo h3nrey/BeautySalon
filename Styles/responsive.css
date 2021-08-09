@@ -1,3 +1,222 @@
-@media {
+@media (min-width: 992px) {
+    :root{
+        --marginXXBig: 8rem;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section{
+        padding: 8rem 0;
+    }
     
+    .section header, .section #testimonials header{
+        max-width: 28rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .button {
+        height: 3.125rem
+    }
+
+
+    nav .menu{
+        opacity: 1;
+        visibility: visible;
+        top: 0;
+    }
+
+    nav .menu ul{
+        display: flex;
+        gap: 2rem;
+    }
+
+    nav .menu ul a.tittle{
+        font: 400 var(--marginSmall) var(--subtittleFont);
+    }
+
+    nav .icon-menu {
+        display: none;
+    }
+
+    /* home */
+    #home .container {
+        grid-auto-flow: column;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    #home .img{
+        order: 1;
+    }
+
+    #home .text {
+        order: 0;
+        max-width: 18rem;
+        text-align: left;
+    }
+
+    /* about */
+    #about .container{
+        grid-auto-flow: column;
+        margin: 0 auto;
+    }
+
+    /* services */
+    .cards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .card {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    /* testimonials */
+    #testimonials .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #testimonials .container header{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* contact */
+    #contact .container{
+        grid-auto-flow: column;
+        align-items: center;
+    }
+
+    #contact .text {
+        max-width: 24rem;
+    }
+
+    footer.section{
+        padding: 3.75rem 0;
+    }
+
+    footer .container {
+        grid-auto-flow: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1200px) {
+    :root{
+        --marginXXBig: 10rem;
+    }
+
+    .container {
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section{
+        padding: 8rem 0;
+    }
+    
+    .section header, .section #testimonials header{
+        max-width: 28rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .button {
+        height: 3.125rem
+    }
+
+
+    nav .menu{
+        opacity: 1;
+        visibility: visible;
+        top: 0;
+    }
+
+    nav .menu ul{
+        display: flex;
+        gap: 2rem;
+    }
+
+    nav .menu ul a.tittle{
+        font: 400 var(--marginSmall) var(--subtittleFont);
+    }
+
+    nav .icon-menu {
+        display: none;
+    }
+
+    /* home */
+    #home .container {
+        grid-auto-flow: column;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    #home .img{
+        order: 1;
+    }
+
+    #home .text {
+        order: 0;
+        max-width: 20rem;
+        text-align: left;
+        margin-left: 0;
+    }
+
+    /* about */
+    #about .container{
+        grid-auto-flow: column;
+        margin: 0 auto;
+    }
+
+    /* services */
+    .cards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .card {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    /* testimonials */
+    #testimonials .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #testimonials .container header{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* contact */
+    #contact .container{
+        grid-auto-flow: column;
+        align-items: center;
+    }
+
+    #contact .text {
+        max-width: 24rem;
+    }
+
+    footer.section{
+        padding: 3.75rem 0;
+    }
+
+    footer .container {
+        grid-auto-flow: column;
+        align-items: center;
+        justify-content: space-between;
+    }
 }

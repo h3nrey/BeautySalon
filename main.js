@@ -37,6 +37,12 @@ const swiper = new Swiper('.swiper-container', {
     },
     mousewheel: true,
     keyboard: true,
+    breakpoints: {
+        767:{
+            slidesPerView: 2,
+            setSwiperSize: true,
+        },
+    },
   });
 
   //------Scroll Reveal-----//
@@ -51,8 +57,8 @@ const swiper = new Swiper('.swiper-container', {
   scrollReveal.reveal(`#home .text, #home .img,
                         #about .text, #about .img, 
                         #services header, #services .card,
-                        #testimonials  header, #testimonials .testimonial
-                        #contact text, #contact .links,
+                        #testimonials  header, #testimonials .testimonials,
+                        #contact .text, #contact .links,
                         footer .brand, footer .social`, {interval: 100});
 
 //------Back to top-----//
@@ -69,9 +75,31 @@ function backToTop() {
 }
 
 
+const sections = document.querySelectorAll('main section[id]');
+
+function activateSection() {
+    const checkpoint = window.pageYOffset + (window.innerHeight / 8 ) * 4;
+
+    for (const section of sections) {
+        const sectionTop = section.offsetTop;  // offsetTop é o topo de um elemento
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute('id');
+
+        const checkpointTop = checkpoint >= sectionTop;
+        const checkpointBottom = checkpoint <= sectionTop + sectionHeight;
+
+        if (checkpointTop && checkpointBottom) {
+            document.querySelector('nav ul li a[href*=' + sectionId + ']').classList.add('active');
+        } else {
+            document.querySelector('nav ul li a[href*=' + sectionId + ']').classList.remove('active');
+        }
+    }
+}
+
 window.addEventListener('scroll', function (){
     headerScroll();
     backToTop();
+    activateSection();
 })
 
 

@@ -31,15 +31,15 @@
 }
 
 #home .text{
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: var(--marginMedium);
+    margin-right: var(--marginMedium);
     text-align: center;
 }
 
 #home .text h1{
-    margin-bottom: 1rem;
+    margin-bottom: var(--marginSmall);
 }
 
 #home .text p{
-    margin-bottom: 2rem;
+    margin-bottom: var(--marginBig);
 }

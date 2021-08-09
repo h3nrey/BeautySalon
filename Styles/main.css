@@ -3,12 +3,16 @@ main{
 }
 
 .section{ 
-    padding: 5rem 0;
+    padding: var(--marginXXBig) 0;
 }
 
 
 .section .tittle{
     margin-bottom: 1rem;
+}
+
+.section .subtittle {
+    font-size: var(--subtittleFont);
 }
 
 .section header {

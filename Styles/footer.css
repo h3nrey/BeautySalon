@@ -2,11 +2,15 @@ footer{
     background-color: var(--bgDark);
 }
 
+footer .social {
+    grid-auto-flow: column;
+    width: fit-content;
+}
 footer .logo-alt{
     display: block;
-    font-size: 1.2rem;
+    font-size: var(--logoFontSize);
     color: var(--bg);
-    font-family: Poppins,sans-serif;
+    font-family: var(--tittleFamily);
     font-weight: 700;
     margin-bottom: 1.5rem;
 }
@@ -22,7 +26,7 @@ footer .brand p{
 }
 
 footer i{
-    font-size: 2rem;
+    font-size: var(--marginBig);
     color: var(--bgLighteen);
     transition: color 0.2s;
 }
@@ -32,7 +36,7 @@ footer i:hover{
 }
 
 footer .social a{
-    margin-right: 2rem;
+    margin-right: var(--marginBig);
 
     transition: 0.3s;
     display: inline-block;

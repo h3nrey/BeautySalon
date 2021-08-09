@@ -7,11 +7,27 @@
 
 :root{
     font-size: 100%;
+
+    /* colors */
     --bgDark: rgba(48, 34, 14, 1);
     --bg: rgba(255, 167, 36, 1);
     --bgLighteen: rgba(252, 211, 151, 1);
     --textcolorSnow: rgba(249, 249, 249, 1);
     --textColorWhite: rgba(255, 255, 255, 1); 
+
+    /* font size*/
+    --logoFontSize: 1.2rem;
+    --subtittleFont: 1rem;
+    --tittleFamily: 'Poppins', sans-serif;
+    --subtittleFamily: 'DM Sans', sans-serif;
+
+    /* margins */
+    --marginSmall: 1rem;
+    --marginMedium: 1.5rem;
+    --marginBig: 2rem;
+    --marginExtraBig: 4rem;
+    --marginXXBig: 5rem;
+    --headerHeight: 4.5rem;
 }
 
 html{
@@ -19,14 +35,14 @@ html{
 }
 
 body {
-    font: 400 1rem "DM Sans", sans-serif;
+    font: 400 var(--subtittleFont) var(--subtittleFamily);
     color: var(--bgDark);
     background-color: var(--textColorWhite);
     -webkit-font-smoothing:antialisiased;
 }
 
 .tittle{
-    font: 700 1.85rem Poppins,  sans-serif;
+    font: 700 1.85rem var(--tittleFamily);
     color: var(--bgDark);
 }
 
@@ -40,7 +56,7 @@ ul {
 }
 
 .container{
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: var(--marginMedium);
+    margin-right: var(--marginMedium);
 }
 
